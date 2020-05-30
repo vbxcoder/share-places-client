@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Avatar correctly 1`] = `
+<div
+  className="avatar test-className"
+  style="test-style"
+>
+  <img
+    alt="test-img-alt"
+    src="test-img-src"
+    style={
+      Object {
+        "height": "test-width",
+        "width": "test-width",
+      }
+    }
+  />
+</div>
+`;
