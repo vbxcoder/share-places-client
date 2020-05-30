@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render LoadingSpinner as overlay correctly 1`] = `
+<div
+  className="loading-spinner__overlay"
+>
+  <div
+    className="lds-dual-ring"
+  />
+</div>
+`;
+
+exports[`Should render LoadingSpinner without overlay correctly 1`] = `
+<div
+  className="undefined"
+>
+  <div
+    className="lds-dual-ring"
+  />
+</div>
+`;
