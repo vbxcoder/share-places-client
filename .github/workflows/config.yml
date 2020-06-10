@@ -26,13 +26,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci    
     - run: npm test
-    - run: unset CI
     - name: npm run build
       env:
         CI: false
       run: npm run build
       
 
+on:
+  push:
+    branches: [ master ]
+          
   deploy:
     name: Deploy
 
