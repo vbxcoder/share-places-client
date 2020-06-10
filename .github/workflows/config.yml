@@ -4,8 +4,6 @@
 name: CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -26,28 +24,3 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci    
     - run: npm test
-    - name: npm run build
-      env:
-        CI: false
-      run: npm run build
-      
-
-on:
-  push:
-    branches: [ master ]
-          
-  deploy:
-    name: Deploy
-
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting:share-places-client
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
