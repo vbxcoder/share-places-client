@@ -27,7 +27,11 @@ jobs:
     - run: npm ci    
     - run: npm test
     - run: unset CI
-    - run: npm run build
+    - name: npm run build
+      env:
+        CI: false
+      run: npm run build
+      
 
   deploy:
     name: Deploy
