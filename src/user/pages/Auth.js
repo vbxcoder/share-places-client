@@ -98,7 +98,7 @@ const Auth = () => {
         );
 
         auth.login(responseData.userId, responseData.token);
-      } catch (error) {}
+      } catch (err) {}
     }
   };
 
