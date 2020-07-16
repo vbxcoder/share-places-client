@@ -1,3 +1,9 @@
+![CI](https://github.com/vbxcoder/share-places-client/workflows/CI/badge.svg)
+![CD](https://github.com/vbxcoder/share-places-client/workflows/CD/badge.svg)
+# share-places-client
+Social media platform sample about sharing places with photo.
+https://share-places-client.firebaseapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
