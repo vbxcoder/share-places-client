@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - vbxcoder
+  assignees:
+  - vbxcoder
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: node-notifier
+    versions:
+    - 8.0.1
+    - 8.0.2
+  - dependency-name: react-scripts
+    versions:
+    - 4.0.2
